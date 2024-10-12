@@ -33,7 +33,8 @@ def isHappy(n):
 > ```bash
 > docker exec <your container> cat /etc/os-release
 > ```
->> explanation: print container's os.  
+>> Explanation: Print container's os.
+>> Output  
 >> PRETTY_NAME="Ubuntu 24.04.1 LTS"  
 >> NAME="Ubuntu"  
 >> VERSION_ID="24.04"
@@ -47,3 +48,21 @@ def isHappy(n):
 >> PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
 >> UBUNTU_CODENAME=noble  
 >> LOGO=ubuntu-logo
+> ```bash
+> docker exec <your container> git --version
+> ```
+>> Explanation: Print container's git version.  
+>> Output  
+>> git version 2.43.0
+> ```bash
+> docker exec <your container> python3 --version
+> ```
+>> Explanation: Print container's python3 version.  
+>> Output  
+>> Python 3.12.3
+> ```bash
+> docker inspect --format="{{ .HostConfig.Binds }}" <your container>
+> ```
+>> Explanation: Print path of mounted directory of the specified container.  
+>> Output
+>> [./ossp_host_dir:/mnt/ossp_container_dir]
