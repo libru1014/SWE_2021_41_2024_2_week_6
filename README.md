@@ -30,6 +30,6 @@ def isHappy(n):
 * Explanation: First, get the sum of the squares of each digits. Second, repeat it. If the sum is 1, return true. Otherwise, store the sum. If the sum has already existed, return false, because it entered into the cycle.
 ---
 ## Week 5 Assignment
-> <pre><code>docker exec <your container> cat /etc/os-release</code></pre>
+> <pre><code>docker exec \<your container\> cat /etc/os-release</code></pre>
 >> print container's os.
 >> ex)
