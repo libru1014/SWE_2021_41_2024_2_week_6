@@ -26,3 +26,4 @@ def isHappy(n):
 
   return result
 ```
+* Explanation: First, get the sum of the squares of each digits. Second, repeat it. If the sum is 1, return true. Otherwise, store the sum. If the sum has already existed, return false, because it entered into the cycle.
