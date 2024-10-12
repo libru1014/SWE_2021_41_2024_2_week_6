@@ -30,9 +30,7 @@ def isHappy(n):
 * Explanation: First, get the sum of the squares of each digits. Second, repeat it. If the sum is 1, return true. Otherwise, store the sum. If the sum has already existed, return false, because it entered into the cycle.
 ---
 ## Week 5 Assignment
-> ```bash
-docker exec <your container> cat /etc/os-release
-```
+> `docker exec <your container> cat /etc/os-release`
 >> print container's os.  
 >> PRETTY_NAME="Ubuntu 24.04.1 LTS"  
 >> NAME="Ubuntu"  
